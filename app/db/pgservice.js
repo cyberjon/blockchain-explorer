@@ -20,7 +20,7 @@ var pgconfig = config.pg
 var helper = require('../helper.js');
 var logger = helper.getLogger('pgservice');
 
-const connectionString = 'postgres://hppoc:password@postgres:5432/fabricexplorer';
+const connectionString = 'postgres://hppoc:password@127.0.0.1:5432/fabricexplorer';
 console.log(connectionString);
 const client = new Client({
     connectionString: connectionString,
